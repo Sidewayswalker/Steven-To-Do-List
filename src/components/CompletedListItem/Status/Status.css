@@ -1,0 +1,13 @@
+@media (min-width: 666.00000000001px) {
+    #The_StatusC {
+        color: rgb(2, 119, 20);
+    }
+}
+@media (max-width: 666px) {
+    .status-container {
+        margin-top: 20px;
+    }
+    #The_StatusC {
+        color: rgb(2, 119, 20);
+    }
+}

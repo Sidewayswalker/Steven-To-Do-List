@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width: 666.00000000001px) {
+    /* Purple */
+    .List_Item {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* Creates 5 equal-width columns */
+        gap: 20px; /* Consistent space between columns */
+        padding: 15px; /* Adds padding inside each List_Item for more space */
+        margin: 10px 10px 20px; /* Uniform side margins and space between rows */
+        border: 1px solid #ccc;
+        border-radius: 10px; /* Adjusted for a consistent look */
+        align-items: center;
+    }
+
+    .Overdue_Item {
+        background-color: red;
+    }
+
+    /* Centers and aligns each property consistently */
+    .event-priority, 
+    .event-title, 
+    .event-description, 
+    .event-status, 
+    .event-due-date {
+        text-align: center;
+        padding: 0 5px; /* Adds slight padding for text breathing room */
+    }
+
+    .event-due-date {
+        color: gray;
+    }
+
+    .BOTH_Status_DueDate{
+        display: none;
+    }
+}
+@media (max-width: 666px) {
+    .List_Item {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Defines 4 equal-width columns */
+        align-items: center;
+        gap: 10px; /* Adds spacing between columns */
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 10px 15px; /* Adjusted side margins for a uniform appearance */
+    }
+
+    .Overdue_Item {
+        background-color: red;
+    }
+
+    .event-priority, 
+    .event-title, 
+    .event-description {
+        text-align: center;
+    }
+
+    /* Stacks Status and Due Date vertically in the fourth column */
+    .Status_DueDate {
+        display: flex;
+        flex-direction: column; /* Stacks Status and Due Date */
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Hide individual status and due date if not needed outside combined column */
+    .Solo_Status, .Solo_DueDate {
+        display: none;
+    }
+}
+
+.List_Item {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .List_Item.expired {
+    background-color: #ffb9bfa2; 
+    color: #832f37; 
+    border-color: #f80019;
+  }

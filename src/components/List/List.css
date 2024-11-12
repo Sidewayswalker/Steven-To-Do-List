@@ -1,0 +1,92 @@
+/* Styles for larger screens */
+@media (min-width: 666.00000000001px) {
+    .List_Box {
+        background-color: rgb(190, 211, 214);
+        border: 5px solid black;
+        justify-content: center;
+        align-items: center;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    
+    .List_Subject {
+        font-family: Lucida;
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 22px;
+        text-decoration: underline;
+    }
+
+    .List_Titles {
+        display: grid;
+        grid-template-columns: repeat(5, auto); /* Creates 5 rows of automatic height */
+        column-gap: 10px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        font-family: Copperplate;
+    }
+    
+    .DueDate_Status_Titles {
+        display: none;
+    }
+}
+
+/* Styles for smaller screens */
+@media (max-width: 666px) {
+    .List_Box {
+        background-color: rgb(190, 211, 214);
+        border: 5px solid black;
+        justify-content: center;
+        align-items: center;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .List_Subject {
+        font-family: Lucida;
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 22px;
+        text-decoration: underline;
+    }
+
+
+    .List_Titles {
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 45px;
+        margin-left: -20px;
+        margin-right: -20px;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: Copperplate;
+        align-items: center;
+        margin-bottom: -8px;
+    }
+    
+    .DueDate_Status_Titles {
+        display: flex;
+        flex-direction: column; /* Stack vertically on small screens */
+        align-items: flex-start;
+        margin-top: -5px;
+        margin-bottom: -10px;
+    }
+    
+    .DueDate_Title {
+        margin-bottom: -15px; /* Adjust spacing for stacked layout */
+    }
+    
+    .Status_Title {
+        position: relative;
+        right: -10px;
+    }
+    .V_Status {
+        display: none;
+    }
+    .V_DueDate {
+        display: none;
+    }
+}

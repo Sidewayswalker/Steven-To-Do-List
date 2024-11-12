@@ -1,0 +1,28 @@
+@media (min-width: 666.00000000001px) {
+    .List_TitlesC {
+        display: grid;
+        grid-template-columns: repeat(4, auto); /* Creates 5 rows of automatic height */
+        column-gap: 10px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        font-family: Copperplate;
+    }
+}
+
+@media (max-width: 666px) {
+    .List_TitlesC {
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 45px;
+        margin-left: -10px;
+        margin-right: -40px;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: Copperplate;
+        align-items: center;
+        margin-bottom: -8px;
+    }
+}

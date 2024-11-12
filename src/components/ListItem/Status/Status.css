@@ -1,0 +1,9 @@
+
+@media (max-width: 666px) {
+    .status-container {
+        margin-top: 20px;
+    }
+    #The_Status {
+        color: rgb(122, 121, 121);
+    }
+}

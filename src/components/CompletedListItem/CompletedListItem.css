@@ -1,0 +1,36 @@
+@media (min-width: 666.00000000001px) {
+    .List_ItemC {
+        background-color: rgb(133, 251, 151);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Creates 5 equal-width columns */
+        gap: 0px; /* Consistent space between columns */
+        padding: 15px; /* Adds padding inside each List_Item for more space */
+        margin: 10px 10px 20px; /* Uniform side margins and space between rows */
+        border: 1px solid #ccc;
+        border-radius: 10px; /* Adjusted for a consistent look */
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 666px) {
+    .List_ItemC {
+        background-color: rgb(133, 251, 151);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Defines 4 equal-width columns */
+        align-items: center;
+        gap: 10px; /* Adds spacing between columns */
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 10px 15px; /* Adjusted side margins for a uniform appearance */
+    }
+    .BOTH_Status_DueDateC {
+        display: none;
+    }
+    .Solo_StatusC {
+        display: flex;
+        flex-direction: column; /* Stacks Status and Due Date */
+        align-items: center;
+        margin-top: -18px; 
+    }
+}

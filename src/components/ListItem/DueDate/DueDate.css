@@ -1,0 +1,11 @@
+@media (min-width: 666.00000000001px) {
+    .Short_Date {
+        display: none;
+    }
+}
+
+@media (max-width: 666px) {
+    #Long_Date {
+        display: none;
+    }
+}
